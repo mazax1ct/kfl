@@ -1,0 +1,39 @@
+.news-item {
+    @media(min-width: $middle) {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__image {
+        min-width: 180px;
+        width: 180px;
+        @media(max-width: $middle - 0.01px) {
+            display: none;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &__text-block {}
+
+    &__title {
+        color: var(--green);
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.38095;
+        margin-bottom: 8px;
+        @media(min-width: $lg) {
+            font-size: 24px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            @include hover {
+                color: var(--beige);
+            }
+        }
+    }
+}

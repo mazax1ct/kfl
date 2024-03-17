@@ -1,0 +1,62 @@
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 12px));
+    gap: 64px 24px;
+    @media(min-width: 600px) {
+        grid-template-columns: repeat(3, calc(100% / 3 - 16px));
+    }
+    @media(min-width: 960px) {
+        grid-template-columns: repeat(4, calc(25% - 24px));
+        gap: 64px 32px;
+    }
+}
+
+.team-member {
+    &__image {
+        margin-bottom: 16px;
+        @media(min-width: $middle) {
+            margin-bottom: 20px;
+        }
+        @media(min-width: $lg) {
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &__name {
+        color: var(--green);
+        font-weight: 700;
+        margin-bottom: 0;
+        @media(min-width: $middle) {
+            font-size: 21px;
+            text-transform: uppercase;
+        }
+        @media(min-width: $lg) {
+            font-size: 24px;
+        }
+    }
+
+    &__position {
+        color: var(--green);
+        font-size: 10px;
+        margin-bottom: 10px;
+        @media(min-width: $middle) {
+            font-size: 16px;
+        }
+        @media(min-width: $lg) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__contact {
+        color: #A6AEB6;
+        font-size: 10px;
+        margin-bottom: 0;
+        @media(min-width: $middle) {
+            font-size: 16px;
+        }
+    }
+}

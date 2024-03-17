@@ -1,0 +1,64 @@
+.popup {
+    background-color: #fff;
+    border-radius: 16px;
+    display: none;
+
+    &.fancybox-content {
+        max-width: 400px;
+        padding: 80px 24px;
+        @media(min-width: $middle) {
+            padding: 112px 80px 70px;
+            max-width: 676px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 8px !important;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        @media(min-width: $lg) {
+            font-size: 21px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.fancybox-slide--html {
+    .popup {
+        .fancybox-close-small {
+            height: 32px;
+            padding: 0;
+            right: 32px;
+            top: 30px;
+            width: 32px;
+
+            svg {
+                fill: var(--beige);
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+}
+
+.feedback-form {
+    .checkbox,
+    .form-label {
+        margin-bottom: 16px;
+    }
+
+    &__button-block {
+        margin-top: 30px;
+        text-align: center;
+        @media(min-width: $lg) {
+            margin-top: 40px;
+        }
+    }
+
+    &__button {
+        max-width: 280px;
+        width: 100%;
+    }
+}

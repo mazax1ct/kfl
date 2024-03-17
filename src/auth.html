@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>KFL</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header_small.html
+
+        <main>
+            <div class="auth-forms page__sections">
+                <div class="container">
+                    <div class="page__sections-columns">
+                        <section class="page__section">
+                            <h2 class="title">Вход</h2>
+
+                            <form class="auth-form" action="" method="post">
+                                <label class="form-label">
+                                    <input id="login" class="input" type="text" value="" name="login" placeholder="Логин">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="pass" class="input" type="password" value="" name="pass" placeholder="Пароль">
+                                </label>
+
+                                <label class="checkbox">
+                                    <input type="checkbox" name="remember" value="Y">
+                                    <span class="checkbox__icon"></span>
+                                    <span class="checkbox__text">Запомнить меня</span>
+                                </label>
+
+                                <button class="button" type="submit">Вход</button>
+                            </form>
+                        </section>
+
+                        <section class="page__section">
+                            <h2 class="title">Регистрация</h2>
+
+                            <form class="auth-form" action="" method="post">
+                                <label class="form-label">
+                                    <input id="login_reg" class="input" type="text" value="" name="login_reg" placeholder="Логин">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="pass_reg" class="input" type="password" value="" name="pass_reg" placeholder="Пароль">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="pass_reg_re" class="input" type="password" value="" name="pass_reg_re" placeholder="Подтверждение пароля">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="email_reg_reg" class="input" type="text" value="" name="email_reg" placeholder="e-mail">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="user_name_reg" class="input" type="text" value="" name="user_name_reg" placeholder="Имя">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="user_last_name_reg" class="input" type="text" value="" name="user_last_name_reg" placeholder="Фамилия">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="phone_reg" class="input" type="text" value="" name="phone_reg" placeholder="Телефон">
+                                </label>
+
+                                <label class="checkbox">
+                                    <input type="checkbox" name="remember" value="Y">
+                                    <span class="checkbox__icon"></span>
+                                    <span class="checkbox__text">Нажимая на кнопку, вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></span>
+                                </label>
+
+                                <button class="button" type="submit">Зарегистрироваться</button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+</body>
+
+</html>

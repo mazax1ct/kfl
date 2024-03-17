@@ -1,0 +1,106 @@
+.header + .hero {
+    @media(min-width: $middle) {
+        margin-top: -120px;
+    }
+    @media(min-width: $lg) {
+        margin-top: -200px;
+    }
+}
+
+.hero {
+    background-color: var(--green);
+    border-bottom: 2px solid var(--beige);
+    @media(min-width: $middle) {
+        border-bottom-width: 4px;
+    }
+
+    &__inner {
+        @media(min-width: $middle) {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    &__image {
+        @media(min-width: $middle) {
+            border-left: 4px solid var(--beige);
+            border-right: 4px solid var(--beige);
+            margin-left: 105px;
+            min-width: 280px;
+            width: 280px;
+        }
+        @media(min-width: $lg) {
+            margin-left: 224px;
+            min-width: 385px;
+            width: 385px;
+        }
+        @media(max-width: $middle - 0.01px) {
+            border-bottom: 2px solid var(--beige);
+            border-top: 2px solid var(--beige);
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+        }
+
+        img {
+            display: block;
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+            @media(max-width: $middle - 0.01px) {
+                height: 320px;
+            }
+        }
+    }
+
+    &__text-block {
+        color: var(--grey);
+        padding-top: 64px;
+        padding-bottom: 64px;
+        @media(min-width: $middle) {
+            padding-left: 30px;
+        }
+    }
+
+    &__title {
+        color: var(--beige);
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.52380;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        @media(min-width: $middle) {
+            font-size: 28px;
+            line-height: 1.21428;
+        }
+        @media(min-width: $lg) {
+            font-size: 32px;
+            line-height: 1.3125;
+        }
+    }
+
+    &__text {
+        margin-bottom: 2em;
+        @media(min-width: $lg) {
+            margin-bottom: 2.625em;
+        }
+    }
+
+    &__button {
+        max-width: 360px;
+        width: 100%;
+        @media(min-width: $middle) {
+            max-width: 280px;
+        }
+        @media(min-width: $lg) {
+            height: 64px;
+        }
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                color: var(--beige);
+            }
+        }
+    }
+}

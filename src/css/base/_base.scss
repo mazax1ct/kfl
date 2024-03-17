@@ -1,0 +1,233 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background-color: #fff;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: var(--main_font_family);
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    overflow-x: hidden;
+
+    &.is-overflow {
+        overflow: hidden;
+    }
+
+    &__content {
+        flex: 1 0 auto;
+        @media(max-width: $middle - 0.01px) {
+            padding-top: 66px;
+        }
+    }
+
+    &__sections {
+        @media(min-width: $middle) {
+            border-bottom: 4px solid var(--beige);
+        }
+
+        .page__section {
+            &:nth-child(1) {
+                border-bottom: none;
+                @media(min-width: $middle) {
+                    padding-right: 110px;
+                }
+            }
+
+            &:nth-child(2) {
+                @media(max-width: $middle - 0.01px) {
+                    border-top: 2px solid var(--beige);
+                    margin-left: calc(0.01px - var(--container_padding));
+                    margin-right: calc(0.01px - var(--container_padding));
+                    padding-left: var(--container_padding);
+                    padding-right: var(--container_padding);
+                }
+                @media(min-width: $middle) {
+                    border-left: 4px solid var(--beige);
+                    border-bottom: none;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    &__sections-columns {
+        @media(min-width: $middle) {
+            display: flex;
+        }
+
+        .page__section {
+            @media(min-width: $middle) {
+                width: 50%;
+            }
+        }
+    }
+
+    &__section {
+        border-bottom: 2px solid var(--beige);
+        padding-top: var(--section_vertical_padding);
+        padding-bottom: var(--section_vertical_padding);
+        @media(min-width: $middle) {
+            border-bottom-width: 4px;
+        }
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    padding-left: var(--container_padding);
+    padding-right: var(--container_padding);
+    @media(min-width: $middle) {
+        max-width: 1090px;
+    }
+    @media(min-width: $lg) {
+        max-width: 1380px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.title {
+    color: var(--green);
+    font-family: var(--secondary_font_family);
+    font-size: 28px;
+    line-height: 1.21428;
+    margin-bottom: 16px;
+    @media(min-width: $middle) {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    @media(min-width: $lg) {
+        font-size: 48px;
+        line-height: 1.33333;
+        margin-bottom: 24px;
+    }
+}
+
+a {
+    color: var(--black);
+    transition: color 0.3s;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+button,
+input,
+textarea {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+hr {
+    margin: 40px 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px dashed var(--grey);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.responsive-table {
+    overflow-x: auto;
+}
+
+.table {
+    border-collapse: collapse;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+
+    th {
+        background-color: #D9D9D9;
+        padding: 20px;
+    }
+
+    td,
+    th {
+        border: none;
+        font-weight: 300;
+        padding: 10px;
+        text-align: left;
+
+        &:first-child {
+            padding-left: 20px;
+        }
+
+        &:last-child {
+            padding-right: 20px;
+        }
+    }
+
+    th {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    tbody {
+        tr:nth-child(1) {
+            td {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    b {
+        font-weight: 700;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}

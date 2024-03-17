@@ -1,0 +1,27 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$middle: 1180px;
+$hd: 1200px;
+$lg: 1400px;
+
+:root {
+    --black: #10140F;
+    --green: #1D4636;
+    --grey: #EDE6E4;
+    --grey2: #F1EFEC;
+    --beige: #EBCB9A;
+    --input_border_default: #989494;
+    --placeholder_color: rgba(0,0,0,0.5);
+    --error_color: #EA2020;
+    --main_font_family: 'Berlin Type', Arial, sans-serif;
+    --secondary_font_family: 'Vetrino', Arial, sans-serif;
+    --section_vertical_padding: 64px;
+    @media(min-width: $middle) {
+        --section_vertical_padding: 112px;
+    }
+    --container_padding: 40px;
+    @media(min-width: $lg) {
+        --container_padding: 85px;
+    }
+}

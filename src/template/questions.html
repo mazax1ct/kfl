@@ -1,0 +1,46 @@
+<section class="questions page__section">
+    <div class="questions__inner container">
+        <div class="questions__text-block">
+            <h2 class="questions__title title">Появились вопросы?</h2>
+            <p class="questions__text">Оставьте заявку на обратную связь и мы ответим на все ваши вопросы!</p>
+            <button class="questions__button button" type="button" data-fancybox="feedback" data-src="#feedback">СВЯЗАТЬСЯ С НАМИ!</button>
+
+            <div id="feedback" class="popup">
+                <p class="popup__title title">Остались вопросы?</p>
+                <p class="popup__text">Оставьте заявку на обратную связь и мы ответим на все ваши вопросы</p>
+
+                <form class="feedback-form" action="">
+                    <label class="form-label">
+                        <input id="name" class="input" type="text" value="" name="name" placeholder="Ваше Имя">
+                    </label>
+
+                    <label class="form-label">
+                        <input id="phone" class="input" type="text" value="" name="phone" placeholder="Ваш номер телефон">
+                    </label>
+
+                    <label class="form-label">
+                        <input id="email" class="input" type="text" value="" name="email" placeholder="Ваша почта">
+                    </label>
+
+                    <label class="form-label">
+                        <textarea class="textarea" placeholder="Комментарий"></textarea>
+                    </label>
+
+                    <label class="checkbox">
+                        <input type="checkbox" name="remember" value="Y">
+                        <span class="checkbox__icon"></span>
+                        <span class="checkbox__text">Нажамая на кнопку, вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></span>
+                    </label>
+
+                    <div class="feedback-form__button-block">
+                        <button class="feedback-form__button button" type="submit">СВЯЗАТЬСЯ С НАМИ!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="questions__image">
+            <img src="images/content/questions/img.jpg" srcset="images/content/questions/img@2x.jpg 2x" alt="">
+        </div>
+    </div>
+</section>

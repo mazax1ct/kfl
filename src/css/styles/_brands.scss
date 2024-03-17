@@ -1,0 +1,14 @@
+.brands {
+    color: #525050;
+    font-size: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    @media(min-width: $middle) {
+        font-size: 12px;
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

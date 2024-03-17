@@ -1,0 +1,28 @@
+.auth-forms {
+    @media(min-width: $middle) {
+        border-top: 4px solid var(--beige);
+    }
+}
+
+.auth-form {
+    @media(min-width: $middle) {
+        max-width: 385px;
+    }
+    @media(min-width: $lg) {
+        max-width: 490px;
+    }
+
+    .checkbox {
+        margin-bottom: 30px;
+    }
+
+    .button {
+        width: 100%;
+        @media(min-width: $middle) {
+            max-width: 280px;
+        }
+        @media(min-width: $lg) {
+            max-width: 385px;
+        }
+    }
+}

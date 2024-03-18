@@ -1,0 +1,322 @@
+.catalog-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    @media(min-width: $middle) {
+        margin-bottom: 60px;
+    }
+
+    .title {
+        margin-bottom: 0;
+    }
+}
+
+.filter-opener {
+    @include button-reset;
+    @include active-area;
+    align-items: center;
+    color: var(--green);
+    display: flex;
+    gap: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    @media(min-width: $middle) {
+        display: none;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 18px;
+        margin-top: 4px;
+        width: 18px;
+    }
+}
+
+.catalog {
+    @media(min-width: $middle) {
+        display: flex;
+        gap: 30px;
+    }
+    @media(min-width: $lg) {
+        gap: 80px;
+    }
+
+    &__filter {
+        @media(min-width: $middle) {
+            width: 175px;
+        }
+        @media(min-width: $lg) {
+            width: 235px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 12px));
+        gap: 64px 24px;
+        @media(min-width: $sm) {
+            grid-template-columns: repeat(3, calc(100% / 3 - 16px));
+        }
+        @media(min-width: $middle) {
+            grid-template-columns: repeat(4, calc(25% - 24px));
+            gap: 64px 32px;
+            width: calc(100% - 175px - 30px);
+        }
+        @media(min-width: $lg) {
+            grid-template-columns: repeat(3, calc(100% / 3 - 22px));
+            width: calc(100% - 235px - 80px);
+        }
+    }
+}
+
+.card {
+    &__image {
+        margin-bottom: 16px;
+        @media(min-width: $middle) {
+            margin-bottom: 26px;
+        }
+        @media(min-width: $lg) {
+            margin-bottom: 32px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__price {
+        color: var(--green);
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 0;
+        @media(min-width: $lg) {
+            font-size: 24px;
+        }
+    }
+
+    &__art {
+        color: #525050;
+        font-size: 10px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        @media(min-width: $middle) {
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+        @media(min-width: $lg) {
+            font-size: 16px;
+        }
+    }
+
+    &__info {
+        color: #A6AEB6;
+        font-size: 10px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+        @media(min-width: $middle) {
+            font-size: 12px;
+            line-height: 1.8;
+            margin-bottom: 21px;
+        }
+        @media(min-width: $lg) {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__buy-block {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .qnt__button {
+            height: 28px;
+            width: 20px;
+            @media(min-width: $middle) {
+                height: 32px;
+                width: 32px;
+            }
+            @media(min-width: $lg) {
+                height: 48px;
+                width: 40px;
+            }
+
+            svg {
+                height: 10px;
+                width: 10px;
+                @media(min-width: $lg) {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+
+        .qnt__input {
+            font-size: 10px;
+            height: 28px;
+            width: 28px;
+            @media(min-width: $middle) {
+                height: 32px;
+                width: 32px;
+            }
+            @media(min-width: $lg) {
+                font-size: 16px;
+                height: 48px;
+                width: 48px;
+            }
+        }
+    }
+
+    &__button {
+        font-size: 10px;
+        height: 28px;
+        letter-spacing: 1px;
+        padding: 0 5px;
+        text-decoration: none;
+        text-transform: none;
+        width: 100%;
+        @media(min-width: $middle) {
+            height: 32px;
+        }
+        @media(min-width: $lg) {
+            font-size: 16px;
+            height: 48px;
+        }
+    }
+}
+
+.filter {
+    @media(max-width: $middle - 0.01px) {
+        background-color: #fff;
+        display: none;
+        left: 0;
+        height: 100%;
+        overflow-y: auto;
+        position: fixed;
+        padding: 60px 20px;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    @media(min-width: $sm) and (max-width: $middle - 0.01px) {
+        padding: 60px 40px;
+    }
+
+    &.is-open {
+        display: block;
+    }
+
+    &__closer {
+        @include button-reset;
+        @include active-area;
+        display: block;
+        height: 20px;
+        left: auto;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 20px;
+        @media(min-width: $middle) {
+            display: none;
+        }
+
+        svg {
+            fill: var(--beige);
+            display: block;
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    &__section {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+            @media(min-width: $lg) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__section-title {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__title {
+        color: var(--green);
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0;
+        @media(min-width: $lg) {
+            font-size: 24px;
+        }
+    }
+
+    &__toggler {
+        @include button-reset;
+        @include active-area;
+        color: var(--beige);
+        display: block;
+        height: 20px;
+        position: relative;
+        transition: color 0.3s;
+        width: 20px;
+        @include hover {
+            color: var(--green);
+        }
+
+        &.is-active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        svg {
+            fill: currentColor;
+            display: block;
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    &__section-inner {
+        display: none;
+        padding-top: 12px;
+
+        .checkbox {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__list {
+        height: 136px;
+        overflow-y: hidden;
+        @media(min-width: $middle) {
+            height: 154px;
+        }
+
+        &.is-open {
+            height: auto;
+        }
+    }
+
+    &__list-toggler {
+        @include button-reset;
+        color: var(--beige);
+        font-size: 16px;
+        padding: 0;
+        transition: color 0.3s;
+        text-decoration: underline;
+        @include hover {
+            color: var(--green);
+        }
+    }
+}

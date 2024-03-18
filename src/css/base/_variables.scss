@@ -20,7 +20,10 @@ $lg: 1400px;
     @media(min-width: $middle) {
         --section_vertical_padding: 112px;
     }
-    --container_padding: 40px;
+    --container_padding: 24px;
+    @media(min-width: 440px) {
+        --container_padding: 40px;
+    }
     @media(min-width: $lg) {
         --container_padding: 85px;
     }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>KFL</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header.html
+
+        <section class="hero">
+            <div class="hero__inner container">
+                <div class="hero__image">
+                    <picture>
+                        <source srcset="images/content/hero/desktop.jpg, images/content/hero/desktop@2x.jpg 2x" media="(min-width: 1400px)">
+                        <source srcset="images/content/hero/middle.jpg, images/content/hero/middle@2x.jpg 2x" media="(min-width: 1180px)">
+                        <img src="images/content/hero/mobile.jpg" srcset="images/content/hero/mobile@2x.jpg 2x" alt="">
+                    </picture>
+                </div>
+                <div class="hero__text-block">
+                    <p class="hero__title">ЧЕРНАЯ ПЯТНИЦЫ!<br> СКИДКА 15% НА ВСЕ!</p>
+                    <div class="hero__text">
+                        <p>С 22 ноября по 30 ноября скидки на обувь и сумки.</p>
+                    </div>
+                    <a class="hero__button button" href="#">УЗНАТЬ УСЛОВИЯ АКЦИИ</a>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <section class="page__section">
+                <div class="container">
+                    <div class="catalog-title">
+                        <h1 class="title">Каталог</h1>
+                        <button class="js-filter-opener filter-opener" type="button">
+                            фильтры
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+                    </div>
+
+
+                    <div class="catalog">
+                        <div class="catalog__filter">
+                            //= template/filter.html
+                        </div>
+                        <div class="catalog__list">
+                            //= template/catalog-list.html
+
+                            //= template/pager.html
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+</body>
+
+</html>

@@ -56,3 +56,49 @@ $(document).on('click', '.js-accordion-toggler', function () {
   }
   return false;
 });
+
+//открытие фильтра
+$(document).on('click', '.js-filter-opener', function () {
+  $('body').addClass('is-overflow');
+  $('.filter').addClass('is-open');
+  return false;
+});
+
+//закрытие фильтра
+$(document).on('click', '.js-filter-closer', function () {
+  $('body').removeClass('is-overflow');
+  $('.filter').removeClass('is-open');
+  return false;
+});
+
+//тогглер секции фильтра
+$(document).on('click', '.js-filter-section-toggler', function () {
+  if(!$(this).closest('.filter__section').find('.filter__section-inner').hasClass('is-open')) {
+    $(this).closest('.filter__section').find('.filter__section-inner').addClass('is-open');
+    $(this).addClass('is-active');
+    $(this).closest('.filter__section').find('.filter__section-inner').slideToggle();
+  }else {
+    $(this).removeClass('is-active');
+    $(this).closest('.filter__section').find('.filter__section-inner').slideToggle(function () {
+      $(this).closest('.filter__section').find('.filter__section-inner').removeClass('is-open');
+    });
+  }
+  return false;
+});
+
+//тогглер списка в секции фильтра
+$(document).on('click', '.js-filter-list-toggler', function () {
+  var old_text = $(this).text();
+  if(!$(this).hasClass('is-active')) {
+    $(this).closest('.filter__section').find('.filter__list').addClass('is-open');
+    $(this).addClass('is-active');
+    $(this).text($(this).attr('data-text'));
+    $(this).attr('data-text', old_text);
+  }else {
+    $(this).removeClass('is-active');
+    $(this).closest('.filter__section').find('.filter__list').removeClass('is-open');
+    $(this).text($(this).attr('data-text'));
+    $(this).attr('data-text', old_text);
+  }
+  return false;
+});

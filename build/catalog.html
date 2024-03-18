@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>KFL</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+
+    <link rel="preload" href="fonts/subset-BerlinType-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-BerlinType-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-VetrinoRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        <header class="header header--big">
+            <div class="header__contacts">
+                <div class="header__inner container">
+                    <div class="header__contacts-block header__address">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#pin_icon" />
+                        </svg>
+                        г. Санкт-Петербург,<br> Московский пр. 139 лит. А
+                    </div>
+        
+                    <div class="header__contacts-block header__email">
+                        <a href="mailto:shop@tvoyaobuv.ru">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#envelope_icon" />
+                            </svg>
+                            shop@tvoyaobuv.ru
+                        </a>
+                    </div>
+        
+                    <div class="header__contacts-block header__phones">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <div>
+                            <a class="header__phone" href="tel:+79313693456">+7 (931) 369-34-56</a>
+                            <a class="header__phone" href="tel:+78126774512">+7 (812) 677-45-12</a>
+                            пн - чт с 11:00 до 19:00
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <div class="header__inner container">
+                <a class="header__logo" href="main.html">
+                    <span class="header__logo-image">
+                        <img src="images/logo.svg" alt="KFL">
+                    </span>
+                    <svg class="header__logo-arrow" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#logo_arrow" />
+                    </svg>
+                    <span class="header__logo-text">ТВОЯ<br> МЕЧТА<br> ОБУВЬ <span>KFL</span></span>
+                </a>
+        
+                <nav class="main-menu">
+                    <button class="js-main-menu-closer main-menu__closer" type="button" title="Закрыть меню">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+        
+                    <div class="main-menu__inner">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Каталог</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Условия работы</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Отзывы</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">FAQ</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Контакты</a>
+                            </li>
+                            <li class="main-menu__item main-menu__item--icon">
+                                <a class="main-menu__link" href="#" title="Личный кабинет">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#user_icon" />
+                                    </svg>
+                                    <span class="main-menu__link-text">Личный кабинет</span>
+                                </a>
+                            </li>
+                            <li class="main-menu__item main-menu__item--icon">
+                                <a class="main-menu__link" href="#" title="Корзина">
+                                    <span class="cart-icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cart_icon" />
+                                        </svg>
+                                        <span class="cart-icon__qnt">99</span>
+                                    </span>
+                                    <span class="main-menu__link-text">Корзина</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        
+                <button class="js-main-menu-opener header__burger" type="button" title="Открыть меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero__inner container">
+                <div class="hero__image">
+                    <picture>
+                        <source srcset="images/content/hero/desktop.jpg, images/content/hero/desktop@2x.jpg 2x" media="(min-width: 1400px)">
+                        <source srcset="images/content/hero/middle.jpg, images/content/hero/middle@2x.jpg 2x" media="(min-width: 1180px)">
+                        <img src="images/content/hero/mobile.jpg" srcset="images/content/hero/mobile@2x.jpg 2x" alt="">
+                    </picture>
+                </div>
+                <div class="hero__text-block">
+                    <p class="hero__title">ЧЕРНАЯ ПЯТНИЦЫ!<br> СКИДКА 15% НА ВСЕ!</p>
+                    <div class="hero__text">
+                        <p>С 22 ноября по 30 ноября скидки на обувь и сумки.</p>
+                    </div>
+                    <a class="hero__button button" href="#">УЗНАТЬ УСЛОВИЯ АКЦИИ</a>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <section class="page__section">
+                <div class="container">
+                    <div class="catalog-title">
+                        <h1 class="title">Каталог</h1>
+                        <button class="js-filter-opener filter-opener" type="button">
+                            фильтры
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+                    </div>
+
+
+                    <div class="catalog">
+                        <div class="catalog__filter">
+                            <div class="filter">
+                                <button class="js-filter-closer filter__closer" type="button" title="Закрыть фильтр">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#close_icon" />
+                                    </svg>
+                                </button>
+                            
+                                <div class="filter__section">
+                                    <div class="filter__section-title">
+                                        <p class="filter__title">Бренд</p>
+                            
+                                        <button class="js-filter-section-toggler filter__toggler is-active" type="button" title="Показать раздел фильтра">
+                                            <svg class="header-logo__text" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="filter__section-inner is-open" style="display: block">
+                                        <div class="filter__list">
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">KfL (10)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">BONAVI (21)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">ТОФА (12)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">MAKFINE (15)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">ESCAN (8)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">KfL (10)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">BONAVI (21)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">ТОФА (12)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">MAKFINE (15)</span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="" value="">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">ESCAN (8)</span>
+                                            </label>
+                                        </div>
+                                        <button class="js-filter-list-toggler filter__list-toggler" type="button" data-text="скрыть">показать еще</button>
+                                    </div>
+                                </div>
+                            
+                                <div class="filter__section">
+                                    <div class="filter__section-title">
+                                        <p class="filter__title">Сезон</p>
+                            
+                                        <button class="js-filter-section-toggler filter__toggler" type="button" title="Показать раздел фильтра">
+                                            <svg class="header-logo__text" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="filter__section-inner">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Демисезонный (21)</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Зима (32)</span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Лето (11)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__list">
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__image">
+                                    <a href="#">
+                                        <img src="images/content/catalog/img.jpg" srcset="images/content/catalog/img.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <p class="card__price">1000₽</p>
+                                <p class="card__art">Артикул: 403056-1</p>
+                                <div class="card__info">
+                                    Бренд: KfL<br>
+                                    Материал: Натуральная кожа<br>
+                                    Осталось: 3 шт.
+                                </div>
+                                <div class="card__buy-block">
+                                    <div class="qnt">
+                                        <button class="qnt__button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                        <input class="qnt__input" type="text" value="1" readonly>
+                                        <button class="qnt__button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="card__button button" href="#">в корзину</a>
+                                </div>
+                            </div>
+
+                            <ul class="pager">
+                                <li class="pager__item">
+                                    <a class="pager__link is-active" href="#">1</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">2</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">3</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">...</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">7</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">8</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__menu-block">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">О нас</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Товары</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Условия работы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Отзывы</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">FAQ</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Новости</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer__subscribe-block">
+                <p class="footer__subscribe-title">Подписывайтесь на&nbsp;нашу рассылку!</p>
+                <p class="footer__subscribe-text">Рассказываем новостях, скидках, акциях и наших новых коллекциях.</p>
+                <form class="subscribe-form" action="">
+                    <input class="subscribe-form__input" type="text" placeholder="Введите Ваш email">
+                    <button class="subscribe-form__submit button" type="submit">Подписаться</button>
+                </form>
+            </div>
+    
+            <div class="footer__contacts-block">
+                <div class="footer__logo"><img src="images/logo.svg" alt="KFL"></div>
+    
+                <p class="footer__contacts-text">
+                    Магазин оптовой обуви.<br>
+                    <span>г. Санкт-Петербург, Московский пр. 139 лит. А</span>
+                </p>
+    
+                <div class="socials-links">
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Мы Вконтакте">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Наш WhatsApp">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#wa_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

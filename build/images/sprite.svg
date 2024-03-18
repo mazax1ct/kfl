@@ -43,11 +43,14 @@
     <symbol id="arrow_right" viewBox="0 0 42 42">
       <path d="M26.25 19.5005C25.4216 19.5005 24.75 20.1721 24.75 21.0005C24.75 21.8289 25.4216 22.5005 26.25 22.5005V19.5005ZM28.0607 22.0611C28.6464 21.4754 28.6464 20.5256 28.0607 19.9398L18.5147 10.3939C17.9289 9.8081 16.9792 9.8081 16.3934 10.3939C15.8076 10.9797 15.8076 11.9294 16.3934 12.5152L24.8787 21.0005L16.3934 29.4858C15.8076 30.0716 15.8076 31.0213 16.3934 31.6071C16.9792 32.1929 17.9289 32.1929 18.5147 31.6071L28.0607 22.0611ZM26.25 22.5005H27V19.5005H26.25V22.5005Z"/>
     </symbol>
-    <symbol id="plus" viewBox="0 0 15 15">
-      <rect x="7" width="1" height="15"/>
-      <rect y="7" width="15" height="1"/>
+    <symbol id="chevron_down" viewBox="0 0 30 30">
+      <polygon points="15,23.5 0.9,9.3 3.7,6.5 15,17.8 26.3,6.5 29.1,9.3 "/>
     </symbol>
-    <symbol id="minus" viewBox="0 0 15 15">
-      <rect y="7" width="15" height="1"/>
+    <symbol id="plus_icon" viewBox="0 0 16 16">
+      <rect y="6" width="16" height="4"/>
+      <rect x="6" width="4" height="16"/>
+    </symbol>
+    <symbol id="minus_icon" viewBox="0 0 16 16">
+      <rect y="6" width="16" height="4"/>
     </symbol>
 </svg>

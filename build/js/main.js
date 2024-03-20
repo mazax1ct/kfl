@@ -26,6 +26,47 @@ $(document).ready(function() {
       ]
     });
   }
+
+  if($('.js-detail-slider').length) {
+    $('.js-detail-slider').slick({
+      mobileFirst: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      dots: true,
+      asNavFor: '.js-detail-thumbs',
+      responsive: [
+        {
+         breakpoint: 1180,
+         settings: {
+           dots: false
+         }
+       }
+      ]
+   });
+
+   $('.js-detail-thumbs').slick({
+     mobileFirst: true,
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     asNavFor: '.js-detail-slider',
+     arrows: false,
+     dots: false,
+     centerMode: true,
+     centerPadding: '0',
+     focusOnSelect: true,
+     responsive: [
+       {
+        breakpoint: 1180,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+     ]
+   });
+  }
 });
 
 //открытие главного меню на мобиле

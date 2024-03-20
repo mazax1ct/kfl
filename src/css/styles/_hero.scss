@@ -49,6 +49,12 @@
             @media(max-width: $middle - 0.01px) {
                 height: 320px;
             }
+            @media(min-width: $middle) {
+                height: 432px;
+            }
+            @media(min-width: $lg) {
+                height: 533px;
+            }
         }
     }
 

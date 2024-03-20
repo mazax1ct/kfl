@@ -187,17 +187,14 @@
   }
 }
 
-.slick-dotted.slick-slider {
-  margin-bottom: 30px;
-}
-
 .slick-dots {
-  position: absolute;
-  bottom: -25px;
-  display: block;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 12px 0 0;
   list-style: none;
   text-align: center;
 }
@@ -212,18 +209,32 @@
   cursor: pointer;
 }
 
+.slick-dots li.slick-active button::after {
+  background-color: var(--beige);
+}
+
 .slick-dots li button {
+  align-items: center;
   font-size: 0;
   line-height: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 20px;
   height: 20px;
-  padding: 5px;
+  padding: 0;
   cursor: pointer;
-  color: transparent;
-  border: 0;
+  border: none;
   outline: none;
   background: transparent;
+}
+
+.slick-dots li button::after {
+  background-color: var(--grey);
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 12px;
+  width: 12px;
 }
 
 .slick-dots li button:hover,

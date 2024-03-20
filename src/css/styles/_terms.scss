@@ -1,0 +1,33 @@
+.terms {
+    @media(min-width: $middle) {
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+    }
+
+    &__right {
+        min-width: 485px;
+        width: 485px;
+        @media(max-width: $middle - 0.01px) {
+            display: none;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+                @media(min-width: $lg) {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+
+    &__left {
+        @media(min-width: $middle) {
+            max-width: 58ch;
+        }
+    }
+}

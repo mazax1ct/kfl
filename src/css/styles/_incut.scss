@@ -1,0 +1,40 @@
+.incut {
+    background-color: #F1EFEC;
+    color: var(--green);
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: var(--section_vertical_padding);
+    margin-bottom: var(--section_vertical_padding);
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    z-index: 1;
+    @media(min-width: $middle) {
+        font-size: 24px;
+    }
+    @media(min-width: $lg) {
+        font-size: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    p {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::after {
+        border-top: 2px solid var(--beige);
+        border-bottom: 2px solid var(--beige);
+        background-color: #F1EFEC;
+        content: '';
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 100vw;
+        z-index: 1;
+    }
+}

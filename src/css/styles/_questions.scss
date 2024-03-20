@@ -39,6 +39,8 @@
     }
 
     &__image {
+        border-left: 4px solid var(--beige);
+        border-right: 4px solid var(--beige);
         max-width: 485px;
         @media(min-width: $middle) {
             margin-top: calc(0.01px - var(--section_vertical_padding));

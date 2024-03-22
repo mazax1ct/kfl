@@ -110,9 +110,37 @@
                                     <span class="main-menu__link-text">Корзина</span>
                                 </a>
                             </li>
+                            <li class="main-menu__item main-menu__item--icon">
+                                <a class="js-search-opener main-menu__link" href="javascript:void(0)" title="Поиск">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#search_icon" />
+                                    </svg>
+                                    <span class="main-menu__link-text">Поиск</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
+        
+                <div class="search-block">
+                    <button class="js-search-closer search-block__closer" type="button" title="Закрыть поиск">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+        
+                    <div class="container">
+                        <form class="search-block__form" action="">
+                            <input class="search-block__input input" type="text" placeholder="Введите запрос">
+                            <button class="search-block__submit" type="submit" title="Найти">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+        
+                </div>
         
                 <button class="js-main-menu-opener header__burger" type="button" title="Открыть меню">
                     <svg aria-hidden="true">
@@ -142,7 +170,7 @@
         </section>
 
         <main>
-            <div class="about-news page__sections">
+            <div class="about-news page__section">
                 <div class="container">
                     <div class="page__sections-columns">
                         <section class="page__section">
@@ -268,10 +296,283 @@
                 </div>
             </section>
 
+            <section class="page__section">
+                <div class="container">
+                    <div class="need-help">
+                        <div class="need-help__form-block">
+                            <h2 class="title">Требуется помощь<br> в подборе товаров<br> для вашего магазина?</h2>
+            
+                            <p class="need-help__form-text">Оставьте заявку на консультацию и мы перезвоним Вам, чтобы ответить на все вопросы.</p>
+            
+                            <form action="">
+                                <label class="form-label">
+                                    <input id="name" class="input input--filled" type="text" value="" name="name" placeholder="Ваше Имя">
+                                </label>
+            
+                                <label class="form-label">
+                                    <input id="phone" class="input input--filled" type="text" value="" name="phone" placeholder="Укажите Ваш телефон">
+                                </label>
+            
+                                <label class="form-label">
+                                    <input id="email" class="input input--filled" type="text" value="" name="email" placeholder="Укажите Вашу почту">
+                                </label>
+            
+                                <button class="button" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
+            
+                                <label class="checkbox">
+                                    <input type="checkbox" name="" value="">
+                                    <span class="checkbox__icon"></span>
+                                    <span class="checkbox__text">Я согласен с <a href="#">политикой конфиденциальности</a> и на обработку персональных данных</span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="need-help__image">
+                            <picture>
+                                <source srcset="images/content/need-help/img_lg.jpg, images/content/need-help/img_lg@2x.jpg" media="(min-width:1400px)">
+                                <img src="images/content/need-help/img_middle.jpg" srcset="images/content/need-help/img_middle@2x.jpg 2x" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="container">
+                    <h2 class="title">Отзывы</h2>
+            
+                    <div class="reviews-container">
+                        <div class="js-reviews reviews">
+                            <div>
+                                <div class="review">
+                                    <div class="review__text-block">
+                                        <p class="review__title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#quote_icon" />
+                                            </svg>
+                                            «Лучшую фразу из отзыва напишите в заголовке»
+                                        </p>
+                                        <p class="review__start">«Вставьте отзыв целиком или часть отзыва клиента. Никогда не выдумывайте отзывы самостоятельно. Фальшивые отзывы всегда видно. Будьте честны.</p>
+                                        <p class="review__end">Опишите конечный результат, который получил человек после работы с вами. Что конкретно ему это дало. Можно описывать результат в цифрах, чтобы была конкретика»</p>
+                                        <a class="review__all" href="javascript:void(0)" data-fancybox data-src="#review_1">Читать отзыв полностью</a>
+                                        <div id="review_1" class="popup">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="review__author">
+                                        <div class="review__author-image">
+                                            <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                        </div>
+                                        <p class="review__author-name">Иван Демидов</p>
+                                        <p class="review__author-city">Санкт-Петербург</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div>
+                                <div class="review">
+                                    <div class="review__text-block">
+                                        <p class="review__title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#quote_icon" />
+                                            </svg>
+                                            «Лучшую фразу из отзыва напишите в заголовке»
+                                        </p>
+                                        <p class="review__start">«Вставьте отзыв целиком или часть отзыва клиента. Никогда не выдумывайте отзывы самостоятельно. Фальшивые отзывы всегда видно. Будьте честны.</p>
+                                        <p class="review__end">Опишите конечный результат, который получил человек после работы с вами. Что конкретно ему это дало. Можно описывать результат в цифрах, чтобы была конкретика»</p>
+                                        <a class="review__all" href="javascript:void(0)" data-fancybox data-src="#review_2">Читать отзыв полностью</a>
+                                        <div id="review_2" class="popup">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="review__author">
+                                        <div class="review__author-image">
+                                            <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                        </div>
+                                        <p class="review__author-name">Иван Демидов</p>
+                                        <p class="review__author-city">Санкт-Петербург</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div>
+                                <div class="review">
+                                    <div class="review__text-block">
+                                        <p class="review__title">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#quote_icon" />
+                                            </svg>
+                                            «Лучшую фразу из отзыва напишите в заголовке»
+                                        </p>
+                                        <p class="review__start">«Вставьте отзыв целиком или часть отзыва клиента. Никогда не выдумывайте отзывы самостоятельно. Фальшивые отзывы всегда видно. Будьте честны.</p>
+                                        <p class="review__end">Опишите конечный результат, который получил человек после работы с вами. Что конкретно ему это дало. Можно описывать результат в цифрах, чтобы была конкретика»</p>
+                                        <a class="review__all" href="javascript:void(0)" data-fancybox data-src="#review_3">Читать отзыв полностью</a>
+                                        <div id="review_3" class="popup">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ipsa molestiae accusamus, nam earum ut? Repellat explicabo minima optio obcaecati consequatur minus blanditiis iusto harum perferendis similique,
+                                                nulla illo quod.</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="review__author">
+                                        <div class="review__author-image">
+                                            <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="">
+                                        </div>
+                                        <p class="review__author-name">Иван Демидов</p>
+                                        <p class="review__author-city">Санкт-Петербург</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="container">
+                    <h2 class="title">FAQ</h2>
+            
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span class="accordion__toggler-num">01</span>
+                            <span class="accordion__toggler-title">Какова минимальная сумма заказа?</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_icon" />
+                            </svg>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Минимальная сумма заказа как таковой нет. Отгрузка осуществляется следующим образом:</p>
+                            <ul>
+                                <li>Обувь: от полукороба (ростовка)</li>
+                                <li>Сумки: от одной единицы</li>
+                                <li>Сопутствующие товары от 3000Р</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span class="accordion__toggler-num">02</span>
+                            <span class="accordion__toggler-title">Сколько вы даёте времени на оплату счёта?</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_icon" />
+                            </svg>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Минимальная сумма заказа как таковой нет. Отгрузка осуществляется следующим образом:</p>
+                            <ul>
+                                <li>Обувь: от полукороба (ростовка)</li>
+                                <li>Сумки: от одной единицы</li>
+                                <li>Сопутствующие товары от 3000Р</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span class="accordion__toggler-num">03</span>
+                            <span class="accordion__toggler-title">Сколько стоит заказать доставку?</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_icon" />
+                            </svg>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Минимальная сумма заказа как таковой нет. Отгрузка осуществляется следующим образом:</p>
+                            <ul>
+                                <li>Обувь: от полукороба (ростовка)</li>
+                                <li>Сумки: от одной единицы</li>
+                                <li>Сопутствующие товары от 3000Р</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span class="accordion__toggler-num">04</span>
+                            <span class="accordion__toggler-title">С какими транспортными компаниями вы работаете?</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_icon" />
+                            </svg>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Минимальная сумма заказа как таковой нет. Отгрузка осуществляется следующим образом:</p>
+                            <ul>
+                                <li>Обувь: от полукороба (ростовка)</li>
+                                <li>Сумки: от одной единицы</li>
+                                <li>Сопутствующие товары от 3000Р</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span class="accordion__toggler-num">05</span>
+                            <span class="accordion__toggler-title">Когда вы производите отгрузку товара?</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_icon" />
+                            </svg>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Минимальная сумма заказа как таковой нет. Отгрузка осуществляется следующим образом:</p>
+                            <ul>
+                                <li>Обувь: от полукороба (ростовка)</li>
+                                <li>Сумки: от одной единицы</li>
+                                <li>Сопутствующие товары от 3000Р</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="accordion">
+                        <button class="js-accordion-toggler accordion__toggler" type="button">
+                            <span class="accordion__toggler-num">06</span>
+                            <span class="accordion__toggler-title">Могу ли я дозаказать товар?</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_icon" />
+                            </svg>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Минимальная сумма заказа как таковой нет. Отгрузка осуществляется следующим образом:</p>
+                            <ul>
+                                <li>Обувь: от полукороба (ростовка)</li>
+                                <li>Сумки: от одной единицы</li>
+                                <li>Сопутствующие товары от 3000Р</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="questions page__section">
                 <div class="questions__inner container">
                     <div class="questions__text-block">
-                        <h2 class="questions__title title">Появились вопросы?</h2>
+                        <h2 class="questions__title title">Остались вопросы?</h2>
                         <p class="questions__text">Оставьте заявку на обратную связь и мы ответим на все ваши вопросы!</p>
                         <button class="questions__button button" type="button" data-fancybox="feedback" data-src="#feedback">СВЯЗАТЬСЯ С НАМИ!</button>
             
@@ -314,6 +615,78 @@
                     </div>
                 </div>
             </section>
+
+            <section class="contacts-section page__section">
+                <div class="container">
+                    <h2 class="title">Мы находимся<br> в 1-й минуте от метро</h2>
+            
+                    <div class="contacts-section__row">
+                        <div class="contacts-section__block">
+                            <p class="contacts-section__item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#pin2_icon" />
+                                </svg>
+                                <span>
+                                    <b>г. Санкт-Петербург, Московский&nbsp;пр.&nbsp;139 лит.&nbsp;А</b><br>
+                                    м. Электросила
+                                </span>
+                            </p>
+                        </div>
+            
+                        <div class="contacts-section__block">
+                            <p class="contacts-section__item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                <b>пн - сб: 11:00 — 19:00</b>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <h2 class="title">Контакты</h2>
+            
+                    <div class="contacts-section__row">
+                        <div class="contacts-section__block contacts-section__block--phones">
+                            <a class="contacts-section__item" href="tel:+78126774512">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#phone2_icon" />
+                                </svg>
+                                <b>+7 (812) 677-45-12</b>
+                            </a>
+                            <br>
+                            <a class="contacts-section__item" href="tel:+78126774513">
+                                <b>+7 (812) 677-45-13</b>
+                            </a>
+                            <br>
+                            <a class="contacts-section__item" href="tel:+78126774516">
+                                <b>+7 (812) 677-45-16</b>
+                            </a>
+                            <br>
+                            <a class="contacts-section__item" href="tel:+78126774528">
+                                <b>+7 (812) 677-45-28</b>
+                            </a>
+                        </div>
+            
+                        <div class="contacts-section__block">
+                            <a class="contacts-section__item" href="mailto:shop@tvoyaobuv.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope2_icon" />
+                                </svg>
+                                <b>shop@tvoyaobuv.ru</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="banner">
+                <picture>
+                    <source srcset="images/content/banner/img_lg.jpg, images/content/banner/img_lg@2x.jpg 2x" media="(min-width: 1400px)">
+                    <source srcset="images/content/banner/img_middle.jpg, images/content/banner/img_middle@2x.jpg 2x" media="(min-width: 1180px)">
+                    <img src="images/content/banner/img_mob.jpg" srcset="images/content/banner/img_mob@2x.jpg 2x" alt="">
+                </picture>
+            </div>
+
         </main>
     </div>
 

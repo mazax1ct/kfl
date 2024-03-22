@@ -27,6 +27,27 @@ $(document).ready(function() {
     });
   }
 
+  //слайдер отзывов
+  if($('.js-reviews').length) {
+    $('.js-reviews').slick({
+      mobileFirst: true,
+      infinite: true,
+      slidesToShow: 1,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1180,
+          settings: {
+            centerMode: true,
+            variableWidth: true
+          }
+        }
+      ]
+    });
+  }
+
+  //слайдер деталки
   if($('.js-detail-slider').length) {
     $('.js-detail-slider').slick({
       mobileFirst: true,
@@ -83,16 +104,28 @@ $(document).on('click', '.js-main-menu-closer', function () {
   return false;
 });
 
+//открытие поиска
+$(document).on('click', '.js-search-opener', function () {
+  $('body').addClass('is-overflow');
+  $('.search-block').addClass('is-open');
+  return false;
+});
+
+//закрытие поиска
+$(document).on('click', '.js-search-closer', function () {
+  $('body').removeClass('is-overflow');
+  $('.search-block').removeClass('is-open');
+  return false;
+});
+
 //тогглер аккордеона
 $(document).on('click', '.js-accordion-toggler', function () {
   var _this = $(this);
   if($(this).hasClass('is-active')) {
     _this.closest('.accordion').find('.accordion__body').slideUp();
-    _this.find('use').attr('xlink:href', 'images/sprite.svg#plus');
     _this.removeClass('is-active');
   }else{
     _this.closest('.accordion').find('.accordion__body').slideDown();
-    _this.find('use').attr('xlink:href', 'images/sprite.svg#minus');
     _this.addClass('is-active');
   }
   return false;

@@ -1,0 +1,72 @@
+.contacts-section {
+    background-color: var(--green);
+    color: #D5CEC6;
+
+    .title {
+        color: inherit;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        @include hover {
+            color: var(--beige);
+        }
+    }
+
+    &__row {
+        @media(min-width: $middle) {
+            display: flex;
+            gap: 100px;
+            padding-left: 100px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 64px;
+        }
+    }
+
+    &__block {
+        &:not(:last-child) {
+            @media(max-width: $middle - 0.01px) {
+                margin-bottom: 21px;
+            }
+        }
+
+        &:first-child {
+            @media(min-width: $middle) {
+                min-width: 415px;
+            }
+        }
+
+        &--phones {
+            @media(min-width: $middle) {
+                columns: 2;
+                column-gap: 32px;
+            }
+
+            a {
+                &:not(:first-child) {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        align-items: center;
+        display: inline-flex;
+        gap: 16px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        svg {
+            fill: var(--beige);
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+}

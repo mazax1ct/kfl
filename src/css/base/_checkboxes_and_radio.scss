@@ -11,6 +11,9 @@
 
     a {
         color: inherit;
+        @include hover {
+            color: var(--black);
+        }
     }
 
     input {

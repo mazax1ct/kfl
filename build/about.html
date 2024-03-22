@@ -109,9 +109,37 @@
                                     <span class="main-menu__link-text">Корзина</span>
                                 </a>
                             </li>
+                            <li class="main-menu__item main-menu__item--icon">
+                                <a class="js-search-opener main-menu__link" href="javascript:void(0)" title="Поиск">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#search_icon" />
+                                    </svg>
+                                    <span class="main-menu__link-text">Поиск</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
+        
+                <div class="search-block">
+                    <button class="js-search-closer search-block__closer" type="button" title="Закрыть поиск">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+        
+                    <div class="container">
+                        <form class="search-block__form" action="">
+                            <input class="search-block__input input" type="text" placeholder="Введите запрос">
+                            <button class="search-block__submit" type="submit" title="Найти">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+        
+                </div>
         
                 <button class="js-main-menu-opener header__burger" type="button" title="Открыть меню">
                     <svg aria-hidden="true">
@@ -212,13 +240,12 @@
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <section class="questions page__section">
                 <div class="questions__inner container">
                     <div class="questions__text-block">
-                        <h2 class="questions__title title">Появились вопросы?</h2>
+                        <h2 class="questions__title title">Остались вопросы?</h2>
                         <p class="questions__text">Оставьте заявку на обратную связь и мы ответим на все ваши вопросы!</p>
                         <button class="questions__button button" type="button" data-fancybox="feedback" data-src="#feedback">СВЯЗАТЬСЯ С НАМИ!</button>
             

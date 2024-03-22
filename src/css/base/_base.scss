@@ -34,44 +34,43 @@ html {
         }
     }
 
-    &__sections {
+    &__sections-columns {
         @media(min-width: $middle) {
-            border-bottom: 4px solid var(--beige);
+            display: flex;
+            margin-top: calc(0.01px - var(--section_vertical_padding));
+            margin-bottom: calc(0.01px - var(--section_vertical_padding));
         }
 
         .page__section {
+            @media(min-width: $middle) {
+                width: 50%;
+            }
+
             &:nth-child(1) {
                 border-bottom: none;
                 @media(min-width: $middle) {
                     padding-right: 110px;
+                }
+                @media(max-width: $middle - 0.01px) {
+                    padding-top: 0;
                 }
             }
 
             &:nth-child(2) {
                 @media(max-width: $middle - 0.01px) {
                     border-top: 2px solid var(--beige);
+                    border-bottom: none;
                     margin-left: calc(0.01px - var(--container_padding));
                     margin-right: calc(0.01px - var(--container_padding));
                     padding-left: var(--container_padding);
                     padding-right: var(--container_padding);
+                    padding-bottom: 0;
                 }
                 @media(min-width: $middle) {
                     border-left: 4px solid var(--beige);
                     border-bottom: none;
                     padding-left: 30px;
                 }
-            }
-        }
-    }
-
-    &__sections-columns {
-        @media(min-width: $middle) {
-            display: flex;
-        }
-
-        .page__section {
-            @media(min-width: $middle) {
-                width: 50%;
             }
         }
     }
@@ -174,6 +173,10 @@ ol,
 ul {
     list-style-position: inside;
     padding: 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 hr {

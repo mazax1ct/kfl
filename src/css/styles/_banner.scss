@@ -1,0 +1,17 @@
+.banner {
+    border-bottom: 2px solid var(--beige);
+    @media(min-width: $middle) {
+        border-bottom-width: 4px;
+    }
+
+    img,
+    picture {
+        display: block;
+    }
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}

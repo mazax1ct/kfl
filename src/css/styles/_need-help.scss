@@ -1,0 +1,65 @@
+.need-help {
+    @media(min-width: $middle) {
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+    }
+
+    &__form-block {
+        @media(min-width: $middle) {
+            max-width: 600px;
+        }
+
+        .form-label {
+            margin-bottom: 8px;
+            @media(min-width: $middle) {
+                margin-bottom: 12px;
+            }
+        }
+
+        .input {
+            text-align: center;
+        }
+
+        .button {
+            display: flex;
+            margin-top: 21px;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+    }
+
+    &__form-text {
+        margin-bottom: 32px;
+        @media(min-width: $middle) {
+            font-size: 18px;
+            margin-bottom: 42px;
+        }
+        @media(min-width: $lg) {
+            font-size: 21px;
+        }
+    }
+
+    &__image {
+        border-left: 4px solid var(--beige);
+        border-right: 4px solid var(--beige);
+        margin-top: calc(0.01px - var(--section_vertical_padding));
+        margin-bottom: calc(0.01px - var(--section_vertical_padding));
+        min-width: 485px;
+        width: 485px;
+        @media(max-width: $middle - 0.01px) {
+            display: none;
+        }
+
+        img,
+        picture {
+            display: block;
+            height: 100%;
+        }
+
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

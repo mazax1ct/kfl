@@ -1,0 +1,118 @@
+.search-block {
+    background-color: var(--green);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+
+    &.is-open {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__closer {
+        @include button-reset;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        left: auto;
+        position: absolute;
+        right: 36px;
+        top: 16px;
+        width: 40px;
+        z-index: 1;
+        @include hover {
+            svg {
+                fill: var(--beige);
+            }
+        }
+
+        svg {
+            fill: var(--grey);
+            height: 24px;
+            transition: fill 0.3s;
+            width: 24px;
+        }
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    &__form {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__input {
+        border-width: 2px;
+        border-color: var(--grey);
+        color: var(--beige);
+        padding-right: 60px;
+        width: 100%;
+        @media(min-width: $lg) {
+            padding-right: 70px;
+        }
+
+        &:not(:disabled) {
+            @include hover {
+                border-color: var(--beige);
+            }
+        }
+
+        &:focus {
+            border-color: var(--beige);
+        }
+
+        &::-webkit-input-placeholder {
+            color: var(--grey);
+            opacity: 1;
+        }
+
+        &::-moz-placeholder {
+            color: var(--grey);
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--grey);
+            opacity: 1;
+        }
+    }
+
+    &__submit {
+        @include button-reset;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        left: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 52px;
+        z-index: 1;
+        @media(min-width: $lg) {
+            width: 64px;
+        }
+        @include hover {
+            svg {
+                fill: var(--beige);
+            }
+        }
+
+        svg {
+            fill: var(--grey);
+            height: 24px;
+            transition: fill 0.3s;
+            width: 24px;
+        }
+    }
+}

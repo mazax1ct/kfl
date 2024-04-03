@@ -251,3 +251,27 @@ hr {
 .text-right {
     text-align: right;
 }
+
+.reading-block {
+    max-width: 800px;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.back-link {
+    align-items: center;
+    color: var(--green);
+    display: flex;
+    gap: 10px;
+    @include hover {
+        color: var(--beige);
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        width: 24px;
+    }
+}

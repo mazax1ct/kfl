@@ -1,0 +1,29 @@
+.left-menu {
+    @include list-reset;
+    font-size: 20px;
+    text-transform: uppercase;
+    @media(min-width: $lg) {
+        font-size: 24px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            @media(min-width: $lg) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__link {
+        color: var(--green);
+        text-decoration: none;
+        @include hover {
+            color: var(--beige);
+        }
+
+        &.is-active {
+            font-weight: 700;
+        }
+    }
+}

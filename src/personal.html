@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>KFL</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header_small.html
+
+        <main>
+            <section class="page__section">
+                <div class="container">
+                    <div class="personal">
+                        <div class="personal__left">
+                            <ul class="left-menu">
+                                <li class="left-menu__item">
+                                    <a class="left-menu__link is-active" href="#">Личные данные</a>
+                                </li>
+                                <li class="left-menu__item">
+                                    <a class="left-menu__link" href="#">История заказов</a>
+                                </li>
+                                <li class="left-menu__item">
+                                    <a class="left-menu__link" href="#">Выход</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="personal__right">
+                            <h2 class="title">Личные данные</h2>
+
+                            <form class="auth-form" action="" method="post">
+                                <label class="form-label">
+                                    <input id="name" class="input" type="text" value="" name="name" placeholder="Ваше имя">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="last_name" class="input" type="text" value="" name="last_name" placeholder="Ваша фамилия">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="second_name" class="input" type="text" value="" name="second_name" placeholder="Ваше отчество">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="login" class="input" type="text" value="" name="login" placeholder="Ваш логин">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="email" class="input" type="text" value="" name="email" placeholder="Эл. почта">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="phone" class="input" type="text" value="" name="phone" placeholder="Телефон">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="pass" class="input" type="password" value="" name="pass" placeholder="Пароль" autocomplete="off">
+                                </label>
+
+                                <label class="form-label">
+                                    <input id="re_pass" class="input" type="password" value="" name="re_pass" placeholder="Повторите пароль" autocomplete="off">
+                                </label>
+
+                                <button class="button" type="submit">Сохранить изменения</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+</body>
+
+</html>

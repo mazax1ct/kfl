@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>KFL</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+
+    <link rel="preload" href="fonts/subset-BerlinType-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-BerlinType-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-VetrinoRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        <header class="header">
+            <div class="header__contacts">
+                <div class="header__inner container">
+                    <div class="header__contacts-block header__address">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#pin_icon" />
+                        </svg>
+                        г. Санкт-Петербург,<br> Московский пр. 139 лит. А
+                    </div>
+        
+                    <div class="header__contacts-block header__email">
+                        <a href="mailto:shop@tvoyaobuv.ru">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#envelope_icon" />
+                            </svg>
+                            shop@tvoyaobuv.ru
+                        </a>
+                    </div>
+        
+                    <div class="header__contacts-block header__phones">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <div>
+                            <a class="header__phone" href="tel:+79313693456">+7 (931) 369-34-56</a>
+                            <a class="header__phone" href="tel:+78126774512">+7 (812) 677-45-12</a>
+                            пн - чт с 11:00 до 19:00
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <div class="header__inner container">
+                <a class="header__logo" href="main.html">
+                    <span class="header__logo-image">
+                        <img src="images/logo.svg" alt="KFL">
+                    </span>
+                    <svg class="header__logo-arrow" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#logo_arrow" />
+                    </svg>
+                    <span class="header__logo-text">ТВОЯ<br> МЕЧТА<br> ОБУВЬ <span>KFL</span></span>
+                </a>
+        
+                <nav class="main-menu">
+                    <button class="js-main-menu-closer main-menu__closer" type="button" title="Закрыть меню">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+        
+                    <div class="main-menu__inner">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Каталог</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Условия работы</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Отзывы</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">FAQ</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Контакты</a>
+                            </li>
+                            <li class="main-menu__item main-menu__item--icon">
+                                <a class="js-search-opener main-menu__link" href="javascript:void(0)" title="Поиск">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#search_icon" />
+                                    </svg>
+                                    <span class="main-menu__link-text">Поиск</span>
+                                </a>
+                            </li>
+                            <li class="main-menu__item main-menu__item--icon">
+                                <a class="main-menu__link" href="#" title="Личный кабинет">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#user_icon" />
+                                    </svg>
+                                    <span class="main-menu__link-text">Личный кабинет</span>
+                                </a>
+                            </li>
+                            <li class="main-menu__item main-menu__item--icon">
+                                <a class="main-menu__link" href="#" title="Корзина">
+                                    <span class="cart-icon">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cart_icon" />
+                                        </svg>
+                                        <span class="cart-icon__qnt">99</span>
+                                    </span>
+                                    <span class="main-menu__link-text">Корзина</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        
+                <button class="js-main-menu-opener header__burger" type="button" title="Открыть меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="page__section">
+                <div class="container">
+                    <h1 class="title">Контакты</h1>
+
+                    <h3>Наш адрес</h3>
+
+                    <div class="contacts-section__row">
+                        <div class="contacts-section__block">
+                            <p class="contacts-section__item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#pin2_icon" />
+                                </svg>
+                                <span>
+                                    <b>г. Санкт-Петербург, Московский&nbsp;пр.&nbsp;139 лит.&nbsp;А</b><br>
+                                    м. Электросила
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="contacts-section__block">
+                            <p class="contacts-section__item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                <b>пн - сб: 11:00 — 19:00</b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3>Как связаться с нами</h3>
+
+                    <div class="contacts-section__row">
+                        <div class="contacts-section__block contacts-section__block--phones">
+                            <a class="contacts-section__item" href="tel:+78126774512">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#phone2_icon" />
+                                </svg>
+                                <b>+7 (812) 677-45-12</b>
+                            </a>
+                            <br>
+                            <a class="contacts-section__item" href="tel:+78126774513">
+                                <b>+7 (812) 677-45-13</b>
+                            </a>
+                            <br>
+                            <a class="contacts-section__item" href="tel:+78126774516">
+                                <b>+7 (812) 677-45-16</b>
+                            </a>
+                            <br>
+                            <a class="contacts-section__item" href="tel:+78126774528">
+                                <b>+7 (812) 677-45-28</b>
+                            </a>
+                        </div>
+
+                        <div class="contacts-section__block">
+                            <a class="contacts-section__item" href="mailto:shop@tvoyaobuv.ru">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#envelope2_icon" />
+                                </svg>
+                                <b>shop@tvoyaobuv.ru</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="banner">
+                <div style="overflow:hidden;">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=30.317362%2C59.877212&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=30.315769%2C59.877615&whatshere%5Bzoom%5D=17&z=16" width="100%" height="565" frameborder="0" allowfullscreen="true"
+                      style="display: block"></iframe>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__menu-block">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">О нас</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Товары</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Условия работы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Отзывы</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">FAQ</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Новости</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a class="footer-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer__subscribe-block">
+                <p class="footer__subscribe-title">Подписывайтесь на&nbsp;нашу рассылку!</p>
+                <p class="footer__subscribe-text">Рассказываем новостях, скидках, акциях и наших новых коллекциях.</p>
+                <form class="subscribe-form" action="">
+                    <input class="subscribe-form__input" type="text" placeholder="Введите Ваш email">
+                    <button class="subscribe-form__submit button" type="submit">Подписаться</button>
+                </form>
+            </div>
+    
+            <div class="footer__contacts-block">
+                <div class="footer__logo"><img src="images/logo.svg" alt="KFL"></div>
+    
+                <p class="footer__contacts-text">
+                    Магазин оптовой обуви.<br>
+                    <span>г. Санкт-Петербург, Московский пр. 139 лит. А</span>
+                </p>
+    
+                <div class="socials-links">
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Мы Вконтакте">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Наш WhatsApp">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#wa_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

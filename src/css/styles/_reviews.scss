@@ -35,40 +35,11 @@
     background-color: var(--grey2);
     letter-spacing: 0;
     padding: 48px;
+    text-align: center;
     @media(min-width: $middle) {
-        display: flex;
-        justify-content: space-between;
         padding: 52px 110px 72px;
         transition: transform 0.3s;
         transform: scale(1);
-    }
-
-    &__text-block {
-        @media(max-width: $middle - 0.01px) {
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-        @media(min-width: $middle) {
-            max-width: 350px;
-        }
-        @media(min-width: $lg) {
-            max-width: 460px;
-        }
-
-        &::before {
-            @media(max-width: $middle - 0.01px) {
-                background: url("../images/icons/avatar.png") no-repeat 50% 50% / 100% auto transparent;
-                content: '';
-                display: block;
-                height: 40px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 21px;
-                width: 40px;
-            }
-        }
     }
 
     &__title {
@@ -125,32 +96,6 @@
         }
     }
 
-    &__author {
-        text-align: center;
-        @media(max-width: $middle - 0.01px) {
-            margin-top: 16px;
-        }
-        @media(min-width: $middle) {
-            min-width: 260px;
-            width: 260px;
-        }
-        @media(min-width: $lg) {
-            min-width: 380px;
-            width: 380px;
-        }
-    }
-
-    &__author-image {
-        margin-bottom: 24px;
-        @media(max-width: $middle - 0.01px) {
-            display: none;
-        }
-
-        img {
-            display: block;
-        }
-    }
-
     &__author-name {
         font-size: 12px;
         margin-bottom: 0;
@@ -170,6 +115,32 @@
         }
         @media(min-width: $lg) {
             font-size: 16px;
+        }
+    }
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px 24px;
+    @media(min-width: 768px) {
+        grid-template-columns: repeat(2, calc(100% / 2 - 12px));
+    }
+    @media(min-width: 960px) {
+        grid-template-columns: repeat(2, calc(100% / 2 - 16px));
+        gap: 64px 32px;
+    }
+
+    .review {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        @media(min-width: $middle) {
+            padding: 48px;
+        }
+
+        .review__author-name {
+            margin-top: auto;
         }
     }
 }

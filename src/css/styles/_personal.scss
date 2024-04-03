@@ -1,0 +1,32 @@
+.personal {
+    @media(min-width: $sm) {
+        display: flex;
+    }
+
+    &__left {
+        @media(max-width: $sm - 0.01px) {
+            margin-bottom: 40px;
+        }
+        @media(min-width: $sm) {
+            padding-top: 44px;
+            width: 220px;
+        }
+        @media(min-width: $middle) {
+            padding-top: 58px;
+            width: 300px;
+        }
+        @media(min-width: $lg) {
+            padding-top: 80px;
+        }
+    }
+
+    &__right {
+        @media(min-width: $sm) {
+            padding-left: 32px;
+            width: calc(100% - 220px);
+        }
+        @media(min-width: $middle) {
+            width: calc(100% - 300px);
+        }
+    }
+}

@@ -197,7 +197,7 @@
         height: 100%;
         overflow-y: auto;
         position: fixed;
-        padding: 60px 20px;
+        padding: 60px 20px 20px;
         top: 0;
         width: 100%;
         z-index: 10;
@@ -317,6 +317,54 @@
         text-decoration: underline;
         @include hover {
             color: var(--green);
+        }
+    }
+
+    &__buttons {
+        background-color: #fff;
+        bottom: 0;
+        display: flex;
+        gap: 10px;
+        left: 0;
+        padding: 10px 0;
+        position: sticky;
+        top: auto;
+        z-index: 1;
+        @media(max-width: $middle - 0.01px) {
+            background-color: #fff;
+            bottom: -20px;
+            left: -20px;
+            right: -20px;
+        }
+
+        .button {
+            font-size: 14px;
+            height: 40px;
+            width: calc(100% / 2 - 10px / 2);
+        }
+    }
+
+    .bx-filter-container-modef {
+        display: flex;
+        height: 0;
+        left: 0;
+        position: sticky;
+        transform: translate(100%, 100%);
+        top: 20px;
+        z-index: 1;
+        @media(max-width: $middle - 0.01px) {
+            transform: none;
+        }
+
+        .bx-filter-popup-result {
+            background-color: #fff;
+            border: 2px solid var(--beige);
+            height: 72px;
+            margin-left: 20px;
+            padding: 10px;
+            @media(max-width: $middle - 0.01px) {
+                margin-left: auto;
+            }
         }
     }
 }

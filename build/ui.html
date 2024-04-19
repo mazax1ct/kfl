@@ -17,6 +17,9 @@
     <link rel="preload" href="fonts/subset-VetrinoRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins_css/slick.css" />
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins_css/select2.css" />
 </head>
 
 <body class="page">
@@ -42,11 +45,73 @@
                     <input id="email" class="input input--filled" type="text" value="" name="email" placeholder="example@mail.ru">
                 </label>
 
+                <label class="form-label">
+                    <textarea class="textarea" placeholder="Комментарий"></textarea>
+                </label>
+
                 <label class="checkbox">
                     <input type="checkbox" name="" value="">
                     <span class="checkbox__icon"></span>
                     <span class="checkbox__text">Я согласен с <a href="#">политикой конфиденциальности</a> и на обработку персональных данных</span>
                 </label>
+
+                <br>
+                <br>
+                <br>
+
+                <label class="radio">
+                    <input type="radio" name="radio" value="1" checked>
+                    <span class="radio__icon"></span>
+                    <span class="radio__text">Вариант 1</span>
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="radio" value="2">
+                    <span class="radio__icon"></span>
+                    <span class="radio__text">Вариант 2</span>
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="radio" value="3">
+                    <span class="radio__icon"></span>
+                    <span class="radio__text">Вариант 3</span>
+                </label>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="select-wrapper">
+                    <select class="js-select" data-placeholder="Специальность">
+                        <option></option>
+                        <option value="1">Хирург</option>
+                        <option value="2">Офтальмолог</option>
+                        <option value="3">Эндокринолог</option>
+                        <option value="4">Терапевт</option>
+                        <option value="5">Гигапевт</option>
+                        <option value="6">Мегапевт</option>
+                        <option value="7">Килопевт</option>
+                        <option value="8">Певт</option>
+                    </select>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="select-wrapper">
+                    <select class="js-select" data-placeholder="Специальность" disabled>
+                        <option></option>
+                        <option value="1">Хирург</option>
+                        <option value="2">Офтальмолог</option>
+                        <option value="3">Эндокринолог</option>
+                        <option value="4">Терапевт</option>
+                        <option value="5">Гигапевт</option>
+                        <option value="6">Мегапевт</option>
+                        <option value="7">Килопевт</option>
+                        <option value="8">Певт</option>
+                    </select>
+                </div>
             </form>
 
             <br>
@@ -142,6 +207,16 @@
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/slick.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
+    
+    <script src="js/main.js"></script>
 </body>
 
 </html>

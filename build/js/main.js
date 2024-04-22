@@ -1,20 +1,4 @@
 $(document).ready(function() {
-  //кастомный селект
-  $('.js-select').each(function() {
-    var $p = $(this).closest('.select-wrapper');
-    $(this).select2({
-      minimumResultsForSearch: 'Infinity',
-      dropdownPosition: 'below',
-      dropdownParent: $p
-    });
-	}).on('select2:open', function (e) {
-    var $p = $(this).closest('.select-wrapper');
-    $p.addClass('open');
-	}).on('select2:close', function (e) {
-    var $p = $(this).closest('.select-wrapper');
-    $p.removeClass('open');
-	});
-
   //слайдер брендов
   if($('.js-brands').length) {
     $('.js-brands').slick({
